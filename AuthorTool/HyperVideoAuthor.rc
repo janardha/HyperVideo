@@ -1,0 +1,278 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\HyperVideoAuthor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\HyperVideoAuthor.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About HyperVideoAuthor"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "HyperVideoAuthor, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_HYPERVIDEOAUTHOR_DIALOG DIALOGEX 0, 0, 526, 256
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW | WS_EX_NOINHERITLAYOUT
+CAPTION "HyperVideoAuthor"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "CONNECT VIDEO",IDC_CONNECTVIDEO,441,9,65,15,WS_DISABLED
+    DEFPUSHBUTTON   "SAVE FILE",IDC_SAVE,443,30,65,15,WS_DISABLED
+    LTEXT           "Action :",IDC_Action,7,14,26,8
+    COMBOBOX        IDC_ACTIONLIST,32,13,130,56,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "VideoPath:",IDC_STATICVIDEOLINK,167,16,36,8
+    COMBOBOX        IDC_VIDEOSELECT,206,13,76,68,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Video",IDC_STATIC,6,42,515,210
+    CONTROL         "",IDC_PRIMARY,"Static",SS_BLACKFRAME | SS_CENTERIMAGE | SS_RIGHTJUST,11,54,235,177,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SECONDARY,"Static",SS_BLACKFRAME,274,53,235,178,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_PRIMARYSLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,5,233,249,17
+    CONTROL         "",IDC_SECONDARYSLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,266,234,249,16
+    CONTROL         "",IDC_PRIMARYACTIVEX,
+                    "{4C599241-6926-101B-9992-00000B65C6F9}",0x0,11,54,235,178
+    LTEXT           "HyperLink :",IDC_STATIC,292,15,38,12
+    COMBOBOX        IDC_HYPERLINKLIST,333,13,95,14,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_LinkNameEntry DIALOGEX 0, 0, 159, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HyperLink Name Entry"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,41,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,83,42,50,14
+    EDITTEXT        IDC_Name,20,17,117,16,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "HyperVideoAuthor.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "HyperVideoAuthor.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_HYPERVIDEOAUTHOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 519
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_LinkNameEntry, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_HYPERVIDEOAUTHOR_DIALOG DLGINIT
+BEGIN
+    IDC_ACTIONLIST, 0x403, 21, 0
+0x4d49, 0x4f50, 0x5452, 0x5020, 0x4952, 0x414d, 0x5952, 0x5620, 0x4449, 
+0x4f45, "\000" 
+    IDC_ACTIONLIST, 0x403, 24, 0
+0x4920, 0x504d, 0x524f, 0x2054, 0x4553, 0x4f43, 0x444e, 0x5241, 0x2059, 
+0x4956, 0x4544, 0x004f, 
+    IDC_ACTIONLIST, 0x403, 18, 0
+0x4320, 0x4552, 0x5441, 0x2045, 0x5948, 0x4550, 0x4c52, 0x4e49, 0x004b, 
+
+    IDC_VIDEOSELECT, 0x403, 8, 0
+0x4956, 0x4544, 0x204f, 0x0031, 
+    IDC_VIDEOSELECT, 0x403, 9, 0
+0x5620, 0x4449, 0x4f45, 0x3220, "\000" 
+    IDC_VIDEOSELECT, 0x403, 9, 0
+0x5620, 0x4449, 0x4f45, 0x3320, "\000" 
+    IDC_VIDEOSELECT, 0x403, 9, 0
+0x5620, 0x4449, 0x4f45, 0x3420, "\000" 
+    IDC_VIDEOSELECT, 0x403, 9, 0
+0x5620, 0x4449, 0x4f45, 0x3520, "\000" 
+    IDC_VIDEOSELECT, 0x403, 9, 0
+0x5620, 0x4449, 0x4f45, 0x3620, "\000" 
+    IDC_VIDEOSELECT, 0x403, 9, 0
+0x5620, 0x4449, 0x4f45, 0x3720, "\000" 
+    IDC_VIDEOSELECT, 0x403, 9, 0
+0x5620, 0x4449, 0x4f45, 0x3820, "\000" 
+    IDC_VIDEOSELECT, 0x403, 9, 0
+0x5620, 0x4449, 0x4f45, 0x3920, "\000" 
+    IDC_VIDEOSELECT, 0x403, 10, 0
+0x5620, 0x4449, 0x4f45, 0x3120, 0x0030, 
+    IDC_VIDEOSELECT, 0x403, 9, 0
+0x4956, 0x4544, 0x204f, 0x3131, "\000" 
+    IDC_VIDEOSELECT, 0x403, 10, 0
+0x5620, 0x4449, 0x4f45, 0x3120, 0x0032, 
+    IDC_PRIMARYACTIVEX, 0x376, 20, 0
+0x0000, 0x0000, 0x0200, 0x000c, 0x0200, 0x0000, 0x247c, 0x0000, 0x1dde, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About HyperVideoAuthor..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\HyperVideoAuthor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
